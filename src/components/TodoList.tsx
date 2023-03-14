@@ -13,7 +13,7 @@ const TodoList = ({ todos, onDeleteTodo }: Props) => {
       renderItem={(todo) => (
         <List.Item
           actions={[
-            <p key="delete" onClick={() => onDeleteTodo(todo.id)}>
+            <p key={todo.id} onClick={() => onDeleteTodo(todo.id)}>
               Delete
             </p>,
           ]}
